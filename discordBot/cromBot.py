@@ -60,7 +60,7 @@ async def 계산(ctx):
         elif len(parts)==5:
             result = int(parts[0])
             nums = list(map(int, parts[1:3]))
-            calc = parts[4].split("")
+            calc = list(parts[3])
             word = parts[-1]
 
         for i in range(2):
