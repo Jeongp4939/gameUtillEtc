@@ -37,7 +37,7 @@ async def 채널설정(ctx):
     channel_id = ctx.channel.id
     await ctx.send(f"타겟 채널이 {ctx.channel.mention}으로 설정되었습니다.")
 
-bot.command()
+@bot.command()
 async def 경로(ctx):
     embed = discord.Embed(title="난이도 별 경로 안내", description="[30 길]\n 초 -> 초 -> 초 -> 초(무시) -> 노 -> 빨 -> 빨 -> 빨(악령 방) -> 빨 \n\n [50 길]\n 빨 -> 초 -> 빨 -> 초(무시) -> 초 -> 빨-> 빨(악령 방) -> 빨(추격자 20%) -> 이루샤 -> 빨 \n 무조건 왼쪽으로 이동 \n\n [100 길]\n 빨 -> 빨(추격자 28% 추천) -> 노 -> 빨(다잡기) -> 빨 -> 빨-> 빨(악령 방) -> 빨(추격자 48%) -> 이루샤 -> 빨  \n\n")
     await ctx.send(embed=embed)
