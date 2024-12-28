@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from discordBot.dico_token import cromBotToken
+from dico_token import cromBotToken
 import re
 
 intents = discord.Intents.default()
